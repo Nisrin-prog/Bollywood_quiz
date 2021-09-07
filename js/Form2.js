@@ -50,6 +50,16 @@ class Form2 {
     this.song.show();
     this.movie.show();
   }
+  hide(){
+    this.hero.hide();
+    this.heroine.hide();
+    this.song.hide();
+    this.movie.hide();
+    this.submit.hide()
+    this.saveGame.hide()
+    this.hint3.hide()
+    this.hint4.hide()
+  }
   
   display(){
     

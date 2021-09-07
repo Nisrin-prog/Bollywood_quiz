@@ -7,7 +7,17 @@ class Form {
     
     
   }
+  reappear(){
+    this.play.show();
+    this.input.show();     
   
+  
+
+    hero.visible = true;
+    heroin.visible = true;
+    song.visible = true;
+    movie.visible = true;
+  }
   display(){
     this.input.position(windowWidth/2 - 660 , windowHeight/2 - 330);
 
@@ -58,5 +68,10 @@ class Form {
             db.collection("Players").doc(doc_id).update({q_id: qid});
         });
    })
+   if(form2){
+     form.reappear()
+     form2.hide()
+     gameState = 0
+   }
   }
 }
